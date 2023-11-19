@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Fortes refeições</title>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" class="header-logo" alt="Fortes"/>
+        <div class="header-user-area">
+            <div>
+                <p>
+                    Bem vindo, Funcionário
+                </p>
+                <button onclick="logout()" class="text-button icon-button">
+                    Sair
+                </button>
+            </div>
+            <img src="assets/user-icon.svg" alt="user icon"/>
+        </div>
+    </header>
+    <main>
+        <h2>Suas refeições selecionadas</h2>
+        <section>
+            <h4>Café da manhã</h4>
+            <p id="cafe-text-description">Pão com mortadela e café com leite</p>
+        </section>
+        <section>
+            <h4>Almoço</h4>
+            <p id="almoco-text-description">Arroz, strogonoff, batata palha e coca-cola</p>
+        </section>
+        <section>
+            <h4>Jantar</h4>
+            <p id="jantar-text-description">Sopa de legumes com carne</p>
+        </section>
+    </main>
+    <script type="text/javascript" src="js/consts.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/interceptors.js"></script>
+    <script type="text/javascript" src="js/getRefs.js"></script>
+</body>
+</html>

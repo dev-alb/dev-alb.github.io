@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Fortes refeições</title>
+</head>
+<body>
+    <header>
+        <div class="menu" id="menu">
+            <div class="menu-header">
+                <img src="assets/logo.png" class="header-logo" alt="Fortes"/>
+                <button class="icon-button" onclick="toggleMenu()">
+                    <img src="assets/close.svg" alt="close icon"/>
+                </button>
+            </div>
+            <a href="refeicoes_cadastradas.html">Refeições</a>
+            <a href="visualizar_demanda.html">Visualizar demanda</a>
+        </div>
+        <button class="icon-button" onclick="toggleMenu()">
+            <img src="assets/menu-icon.svg" alt="menu icon"/>
+        </button>
+        <div class="header-user-area">
+            <div>
+                <p>
+                    Bem vindo, Fornecedor
+                </p>
+                <button onclick="logout()" class="text-button icon-button">
+                    Sair
+                </button>
+            </div>
+            <img src="assets/user-icon.svg" alt="user icon"/>
+        </div>
+    </header>
+    <main>
+        <h2>Cadastrar nova refeição</h2>
+        <form class="row white">
+            <div class="input-text-container">
+                <label for="nome">
+                    Nome
+                </label>
+                <input type="text" name="nome" id="nome" autocomplete="off" required/>
+            </div>
+            <div class="input-text-container">
+                <label for="preco">
+                    Preço
+                </label>
+                <input type="number" name="preco" id="preco" autocomplete="off" required/>
+            </div>
+            <div class="input-text-container">
+                <label for="tipo">
+                    Tipo de refeição
+                </label>
+                <select name="tipo" id="tipo">
+                    <option value="00">
+                        Selecione uma opção
+                    </option>
+                    <option value="01">
+                        Café da manhã
+                    </option>
+                    <option value="02">
+                        Almoço
+                    </option>
+                    <option value="03">
+                        Jantar
+                    </option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" name="exibindo" id="exibindo"/>
+                <label for="exibindo">
+                    Exibindo
+                </label>
+            </div>
+            <div class="default-confirm-area">
+                <button onclick="handleConfirmNewRef()" class="success-button">
+                    Confirmar cadastro
+                </button>
+            </div>
+        </form>
+    </main>
+    <script type="text/javascript" src="js/consts.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/interceptors.js"></script>
+</body>
+</html>

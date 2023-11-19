@@ -1,0 +1,252 @@
+{
+  "users": [
+    {
+      "id": "01",
+      "nome": "Administrador",
+      "tipo": "01",
+      "email": "administrador@fortes.com",
+      "senha": "admin"
+    },
+    {
+      "id": "02",
+      "nome": "Funcionario",
+      "tipo": "02",
+      "email": "funcionario@fortes.com",
+      "senha": "func"
+    },
+    {
+      "id": "03",
+      "nome": "Fornecedor",
+      "tipo": "03",
+      "email": "fornecedor@fortes.com",
+      "senha": "forne"
+    }
+  ],
+  "fornecedor": {
+    "refeicoes": [
+      {
+        "id": "01",
+        "nome": "Pão com ovo",
+        "data": "11/11/2023",
+        "tipo": "Café da manhã",
+        "exibindo": "Não",
+        "preco": "10"
+      },
+      {
+        "id": "02",
+        "nome": "Pão com ovo 2",
+        "data": "10/11/2023",
+        "tipo": "Café da manhã",
+        "exibindo": "Sim",
+        "preco": "10"
+      },
+      {
+        "id": "03",
+        "nome": "Pão com ovo 2",
+        "data": "10/11/2023",
+        "tipo": "Café da manhã",
+        "exibindo": "Sim",
+        "preco": "10"
+      },
+      {
+        "id": "03",
+        "nome": "Arroz e feijão",
+        "data": "09/11/2023",
+        "tipo": "Almoço",
+        "exibindo": "Sim",
+        "preco": "10"
+      },
+      {
+        "id": "04",
+        "nome": "Arroz, feijão e frango",
+        "data": "09/11/2023",
+        "tipo": "Almoço",
+        "exibindo": "Não",
+        "preco": "5"
+      },
+      {
+        "id": "05",
+        "nome": "Arroz, feijão e frango",
+        "data": "09/11/2023",
+        "tipo": "Almoço",
+        "exibindo": "Não",
+        "preco": "10"
+      },
+      {
+        "id": "06",
+        "nome": "Arroz, feijão e frango",
+        "data": "09/11/2023",
+        "tipo": "Almoço",
+        "exibindo": "Não",
+        "preco": "4"
+      },
+      {
+        "id": "08",
+        "nome": "Arroz, feijão e frango",
+        "data": "09/11/2023",
+        "tipo": "Almoço",
+        "exibindo": "Não",
+        "preco": "10"
+      },
+      {
+        "id": "10",
+        "nome": "Arroz, feijão e frango",
+        "data": "09/11/2023",
+        "tipo": "Jantar",
+        "exibindo": "Não",
+        "preco": "10"
+      },
+      {
+        "id": "11",
+        "nome": "Arroz, feijão e frango",
+        "data": "09/11/2023",
+        "tipo": "Jantar",
+        "exibindo": "Sim",
+        "preco": "3"
+      },
+      {
+        "id": "12",
+        "nome": "Arroz, feijão e frango",
+        "data": "09/11/2023",
+        "tipo": "Almoço",
+        "exibindo": "Não",
+        "preco": "10"
+      },
+      {
+        "id": "13",
+        "nome": "Arroz, feijão e frango",
+        "data": "09/11/2023",
+        "tipo": "Almoço",
+        "exibindo": "Não",
+        "preco": "12"
+      },
+      {
+        "id": "14",
+        "nome": "Arroz, feijão e frango",
+        "data": "09/11/2023",
+        "tipo": "Almoço",
+        "exibindo": "Não",
+        "preco": "11"
+      },
+      {
+        "id": "15",
+        "nome": "Arroz, feijão e frango",
+        "data": "09/11/2023",
+        "tipo": "Almoço",
+        "exibindo": "Não",
+        "preco": "10"
+      }
+    ]
+  },
+  "fornecedores": [
+      {
+        "id": "22",
+        "nome": "Fornecedor 22",
+        "data": "06/04/2023",
+        "ativo": "Não",
+        "cnpj": "09.348.713/0001-15",
+        "cep": "29145-455",
+        "estado": "Espirito Santo",
+        "cidade": "Vila Velha",
+        "bairro": "Itapuã",
+        "numero": "147",
+        "complemento": "Rua teste, esquina y"
+      },
+      {
+        "id": "14",
+        "nome": "Fornecedor 14",
+        "data": "01/02/2023",
+        "ativo": "Sim",
+        "cnpj": "01.348.713/0001-15",
+        "cep": "29215-455",
+        "estado": "Espirito Santo",
+        "cidade": "Vila Velha",
+        "bairro": "Ita´parica",
+        "numero": "222",
+        "complemento": "Rua do perigo"
+      },
+      {
+        "id": "84",
+        "nome": "Fornecedor 84",
+        "data": "11/03/2022",
+        "ativo": "Não",
+        "cnpj": "05.348.713/0001-44",
+        "cep": "21723-455",
+        "estado": "Espirito Santo",
+        "cidade": "Vitoria",
+        "bairro": "Penha",
+        "numero": "123",
+        "complemento": "Rua do teste 123"
+      }
+  ],
+  "funcionarios": [
+      {
+        "id": "11",
+        "nome": "Funcionário 11",
+        "data": "06/04/2023",
+        "ativo": "Não",
+        "cpf": "911.272.320-70",
+        "cep": "29145-455",
+        "estado": "Espirito Santo",
+        "cidade": "Vila Velha",
+        "bairro": "Itapuã",
+        "numero": "147",
+        "complemento": "Rua teste, esquina y"
+      },
+      {
+        "id": "48",
+        "nome": "Funcionário 48",
+        "data": "01/02/2023",
+        "ativo": "Sim",
+        "cpf": "321.964.790-12",
+        "cep": "29215-455",
+        "estado": "Espirito Santo",
+        "cidade": "Vila Velha",
+        "bairro": "Ita´parica",
+        "numero": "222",
+        "complemento": "Rua do perigo"
+      },
+      {
+        "id": "33",
+        "nome": "Funcionário 33",
+        "data": "11/03/2022",
+        "ativo": "Não",
+        "cpf": "187.001.150-37",
+        "cep": "21723-455",
+        "estado": "Espirito Santo",
+        "cidade": "Vitoria",
+        "bairro": "Penha",
+        "numero": "123",
+        "complemento": "Rua do teste 123"
+      }
+  ],
+  "refeicoes_fornecedor": [
+    {
+      "id": "01",
+      "nome": "Refeição 01",
+      "fornecedor": "Fornecedor x",
+      "ativo": "Sim",
+      "total_func": "50",
+      "gasto_total": "R$ 400,00",
+      "media": "R$ 8,00"
+    },
+    {
+      "id": "03",
+      "nome": "Refeição 03",
+      "fornecedor": "Fornecedor a",
+      "ativo": "Sim",
+      "total_func": "20",
+      "gasto_total": "R$ 100",
+      "media": "R$ 5,00"
+    },
+    {
+      "id": "07",
+      "nome": "Refeição 07",
+      "fornecedor": "Fornecedor a",
+      "ativo": "Sim",
+      "total_func": "2000",
+      "gasto_total": "R$ 6000,00",
+      "media": "R$ 3,00"
+    }
+  ]
+}

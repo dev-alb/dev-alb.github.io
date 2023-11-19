@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Fortes refeições</title>
+</head>
+<body>
+    <header>
+        <div class="menu" id="menu">
+            <div class="menu-header">
+                <img src="assets/logo.png" class="header-logo" alt="Fortes"/>
+                <button class="icon-button" onclick="toggleMenu()">
+                    <img src="assets/close.svg" alt="close icon"/>
+                </button>
+            </div>
+            <a href="fornecedores_cadastrados.html">Fornecedores</a>
+            <a href="funcionarios_cadastrados.html">Funcionários</a>
+            <a href="refeicoes_por_fornecedor.html">Refeições</a>
+        </div>
+        <button class="icon-button" onclick="toggleMenu()">
+            <img src="assets/menu-icon.svg" alt="menu icon"/>
+        </button>
+        <div class="header-user-area">
+            <div>
+                <p>
+                    Bem vindo, Administrador
+                </p>
+                <button onclick="logout()" class="text-button icon-button">
+                    Sair
+                </button>
+            </div>
+            <img src="assets/user-icon.svg" alt="user icon"/>
+        </div>
+    </header>
+    <main>
+        <h2 id="fornecedor-nome">Editar refeição</h2>
+        <form class="row white">
+            <div>
+                <input type="checkbox" name="ativo" id="ativo"/>
+                <label for="ativo">
+                    Ativo
+                </label>
+            </div>
+            <div class="input-text-container">
+                <label for="nome">
+                    Nome
+                </label>
+                <input type="text" name="nome" id="nome" autocomplete="off" required/>
+            </div>
+            <div class="input-text-container">
+                <label for="cnpj">
+                    CNPJ
+                </label>
+                <input type="text" name="cnpj" id="cnpj" autocomplete="off" required/>
+            </div>
+            <div class="input-text-container">
+                <label for="cep">
+                    CEP
+                </label>
+                <input type="text" name="cep" id="cep" autocomplete="off" required/>
+            </div>
+            <div class="input-text-container">
+                <label for="estado">
+                    Estado
+                </label>
+                <input type="text" name="estado" id="estado" autocomplete="off" required/>
+            </div>
+            <div class="input-text-container">
+                <label for="cidade">
+                    Cidade
+                </label>
+                <input type="text" name="cidade" id="cidade" autocomplete="off" required/>
+            </div>
+            <div class="input-text-container">
+                <label for="bairro">
+                    Bairro
+                </label>
+                <input type="text" name="bairro" id="bairro" autocomplete="off" required/>
+            </div>
+            <div class="input-text-container">
+                <label for="numero">
+                    Número
+                </label>
+                <input type="number" name="numero" id="numero" autocomplete="off" required/>
+            </div>
+            <div class="input-text-container">
+                <label for="complemento">
+                    Complemento
+                </label>
+                <input type="text" name="complemento" id="complemento" autocomplete="off"/>
+            </div>
+            <div class="default-confirm-area">
+                <button onclick="handleConfirmNewFornecedor(true)" class="success-button">
+                    Confirmar edição
+                </button>
+            </div>
+        </form>
+    </main>
+    <script type="text/javascript" src="js/consts.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/interceptors.js"></script>
+    <script type="text/javascript" src="js/editFornecedor.js"></script>
+</body>
+</html>

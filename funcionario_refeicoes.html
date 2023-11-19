@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Fortes refeições</title>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" class="header-logo" alt="Fortes"/>
+        <div class="header-user-area">
+            <div>
+                <p>
+                    Bem vindo, Funcionário
+                </p>
+                <button onclick="logout()" class="text-button icon-button">
+                    Sair
+                </button>
+            </div>
+            <img src="assets/user-icon.svg" alt="user icon"/>
+        </div>
+    </header>
+    <main>
+        <h2>Refeições do dia</h2>
+        <div class="row">
+            <section>
+                <h4>Café da manhã</h4>
+                <p>Pão com mortadela e café com leite</p>
+                <div class="meal-options">
+                    <div>
+                        <input type="radio" name="cafe-option" id="cafe-confirm"/>
+                        <label for="cafe-confirm">
+                            Sim
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="cafe-option" id="cafe-deny"/>
+                        <label for="cafe-deny">
+                            Não
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h4>Almoço</h4>
+                <p>Arroz, strogonoff, batata palha e coca-cola</p>
+                <div class="meal-options">
+                    <div>
+                        <input type="radio" name="almoco-option" id="almoco-confirm"/>
+                        <label for="almoco-confirm">
+                            Sim
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="almoco-option" id="almoco-deny"/>
+                        <label for="almoco-deny">
+                            Não
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h4>Jantar</h4>
+                <p>Sopa de legumes com carne</p>
+                <div class="meal-options">
+                    <div>
+                        <input type="radio" name="jantar-option" id="jantar-confirm"/>
+                        <label for="jantar-confirm">
+                            Sim
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="jantar-option" id="jantar-deny"/>
+                        <label for="jantar-deny">
+                            Não
+                        </label>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="default-confirm-area">
+            <button onclick="confirmMeals()" class="success-button">Confirmar refeições</button>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/consts.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/interceptors.js"></script>
+    <script type="text/javascript" src="js/checkRefs.js"></script>
+</body>
+</html>

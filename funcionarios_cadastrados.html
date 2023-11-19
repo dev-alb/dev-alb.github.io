@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Fortes refeições</title>
+</head>
+<body>
+    <header>
+        <div class="menu" id="menu">
+            <div class="menu-header">
+                <img src="assets/logo.png" class="header-logo" alt="Fortes"/>
+                <button class="icon-button" onclick="toggleMenu()">
+                    <img src="assets/close.svg" alt="close icon"/>
+                </button>
+            </div>
+            <a href="fornecedores_cadastrados.html">Fornecedores</a>
+            <a href="funcionarios_cadastrados.html">Funcionários</a>
+            <a href="refeicoes_por_fornecedor.html">Refeições</a>
+        </div>
+        <button class="icon-button" onclick="toggleMenu()">
+            <img src="assets/menu-icon.svg" alt="menu icon"/>
+        </button>
+        <div class="header-user-area">
+            <div>
+                <p>
+                    Bem vindo, Administrador
+                </p>
+                <button onclick="logout()" class="text-button icon-button">
+                    Sair
+                </button>
+            </div>
+            <img src="assets/user-icon.svg" alt="user icon"/>
+        </div>
+    </header>
+    <main>
+        <div class="row items-center">
+            <h2>Funcionários cadastrados</h2>
+            <button class="secondary-button" onclick="handleNewFuncionario()">
+                <img src="assets/plus.svg" alt="plus icon"/>
+            </button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>ID</td>
+                    <td>Nome</td>
+                    <td class="hide-mobile">Data de criação</td>
+                    <td class="hide-mobile">Ativo</td>
+                </tr>
+            </thead>
+            <tbody id="funcionarios_cadastrados">
+            </tbody>
+        </table>
+    </main>
+    <script type="text/javascript" src="js/consts.js"></script>
+    <script type="text/javascript" src="js/global.js"></script>
+    <script type="text/javascript" src="js/interceptors.js"></script>
+    <script type="text/javascript" src="js/getFuncionarios.js"></script>
+</body>
+</html>
